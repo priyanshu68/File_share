@@ -97,7 +97,7 @@
             </div>
             
             
-            <p>Already have an account?<a href="home.php">Login Here</a></p>
+            <p>Already have an account?<a href="login.php">Login Here</a></p>
         </form>
        </div>
     </body>
