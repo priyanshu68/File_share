@@ -1,0 +1,70 @@
+body,
+html {
+    height: 100%;
+}
+
+
+/* Set a minimum height for the container to prevent it from collapsing */
+
+.container-fluid {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Set a minimum height for the row to make it flex properly */
+
+.row {
+    min-height: 0;
+    flex: 1;
+}
+
+
+/* Sidebar (col-3) */
+
+
+/* Custom styles for sidebar navigation */
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 100vh;
+    /* Ensure the sidebar covers the full viewport height */
+}
+
+.sidebar-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidebar-link:hover {
+    color: #ff8800;
+    /* Change the link color on hover */
+}
+
+.sidebar-link.active {
+    background-color: #ff8800;
+    /* Set a different background color for the active link */
+    color: #fff;
+}
+
+.dashboard {
+    background-color: rgb(241, 241, 241);
+}
+
+.files {
+    min-height: 500px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logout {
+    margin-top: 460px;
+}

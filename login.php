@@ -1,3 +1,17 @@
+<?php
+        session_start();
+
+        if(isset($_SESSION["name"]))
+        {
+            header("Location: index.php");
+        }
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,6 +77,9 @@
             {
                if(password_verify($password,$user["password"]))
                {
+
+                session_start();
+                $_SESSION["name"]=$username;
                 header("Location: index.php");
                 die();
                }
